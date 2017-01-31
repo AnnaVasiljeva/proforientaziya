@@ -1,0 +1,169 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 31.01.2017, 20:00:48
+    Author     : sf2015
+*/
+@import"index.jsp"
+
+#navbar ul{
+                display: none;
+                background-color: #f90;
+                position: absolute;
+                top: 100%;
+            }
+            #navbar li:hover ul { display: block; }
+            #navbar, #navbar ul{
+                margin: 0;
+                padding: 0;
+                list-style-type: none;
+            }
+            #navbar {
+                height: 50px;
+                background-color: #666;
+                padding-left: 40px;
+                min-width: 470px;
+            }
+            #navbar li {
+                float: left;
+                position: relative;
+                height: 100%;
+            }
+            #navbar li a {
+                display: block;
+                padding: 6px;
+                width: 100px;
+                color: #fff;
+                text-decoration: none;
+                text-align: center;
+            }
+            #navbar ul li { float: none; }
+            #navbar li:hover { background-color: #f90; }
+            #navbar ul li:hover { background-color: #666; }
+
+            /* Full-width input fields */
+            input[type=text], input[type=password] {
+                width: 100%;
+                padding: 12px 20px;
+                margin: 8px 0;
+                display: inline-block;
+                border: 1px solid #ccc;
+                box-sizing: border-box;
+            }
+
+            /* Set a style for all buttons */
+            button {
+                background-color: #808080;
+                color: white;
+                padding: 10px 10px;
+                margin: 5px 0;
+                border: none;
+                cursor: pointer;
+                width: 60%;
+                
+                
+            }
+
+            /* Extra styles for the cancel button */
+            .cancelbtn {
+                width: auto;
+                padding: 10px 18px;
+                background-color: #f44336;
+            }
+
+            /* Center the image and position the close button */
+            .imgcontainer {
+                text-align: center;
+                margin: 24px 0 12px 0;
+                position: relative;
+            }
+
+            img.avatar {
+                width: 20%;
+                border-radius: 20%;
+            }
+
+            .container {
+                padding: 16px;
+            }
+
+            span.psw {
+                float: right;
+                padding-top: 16px;
+            }
+
+            /* The Modal (background) */
+            .modal {
+                display: none; /* Hidden by default */
+                position: fixed; /* Stay in place */
+                z-index: 10; /* Sit on top */
+                left:30%;
+                top: 5%;
+                width: 50%; /* Full width */
+                height: 50%; /* Full height */
+                overflow:visible; /* Enable scroll if needed */
+                background-color: rgb(0,0,0); /* Fallback color */
+                background-color: rgba(0,0,0,0); /* Black w/ opacity */
+                padding-top: 20px;
+            }
+
+            /* Modal Content/Box */
+            .modal-content {
+                background-color: #fefefe;
+                margin: 5% auto 20% auto; /* 5% from the top, 15% from the bottom and centered */
+                border: 1px solid #888;
+                width: 70%; /* Could be more or less, depending on screen size */
+            }
+
+            /* The Close Button (x) */
+            .close {
+                position: absolute;
+                right: 25px;
+                top: 0;
+                color: #000;
+                font-size: 40px;
+                font-weight: bold;
+            }
+
+            .close:hover,
+            .close:focus {
+                color: gainsboro;
+                cursor: pointer;
+            }
+
+            /* Add Zoom Animation */
+            .animate {
+                -webkit-animation: animatezoom 0.6s;
+                animation: animatezoom 0.6s
+            }
+
+            @-webkit-keyframes animatezoom {
+                from {-webkit-transform: scale(0)} 
+                to {-webkit-transform: scale(1)}
+            }
+
+            @keyframes animatezoom {
+                from {transform: scale(0)} 
+                to {transform: scale(1)}
+            }
+
+            /* Change styles for span and cancel button on extra small screens */
+            @media screen and (max-width: 300px) {
+                span.psw {
+                    display: table;
+                    float: none;
+                }
+                .cancelbtn {
+                    width: 50%;
+                }
+            }
+ body {
+            color:black;
+        }
+
+       
+       
+        
