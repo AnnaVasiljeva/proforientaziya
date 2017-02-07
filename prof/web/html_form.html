@@ -7,7 +7,10 @@ and open the template in the editor.
 <html>
     <head>
         <title>Добавить вопросы</title>
-        <meta charset="UTF-8">
+        
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <meta http-equiv="Content-Type" content="text/html;charset=ISO-8859-1">   
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
     </head>
     <body>
@@ -74,12 +77,12 @@ and open the template in the editor.
              
      <form action="ReadParams" method="POST" target="_blank">
             <p><b>Выбрать тест:</b><br>
-                <input type="radio" name="test1" value="1"> Тест 1<Br>
-                <input type="radio" name="test2" value="2"> Тест 2<Br>
+                <input type="radio" name="test1" value="1" onclick="this.form.checked();"> Тест 1<Br>
+                <input type="radio" name="test2" value="2" onclick="this.form.checked();"> Тест 2
 
             <p><b>Вопрос:</b>
                 <br>
-                <input name="text" size="40">
+                <input name="text" size="40" pageEncoding=\"UTF-8">
                 <br>
             <p> <input type="submit" value="Отправить">
                 <input type="reset" value="Очистить"></p>

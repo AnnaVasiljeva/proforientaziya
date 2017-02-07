@@ -19,7 +19,7 @@ public class ReadParams extends HttpServlet {
    public void doGet(HttpServletRequest request, HttpServletResponse response)
       throws ServletException, IOException {
       // Set response content type
-      response.setContentType("text/html");
+      response.setContentType("text/html;pageEncoding=\"UTF-8 ");
 
       PrintWriter out = response.getWriter();
       String title = "Reading All Form Parameters";

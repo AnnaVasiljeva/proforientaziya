@@ -12,37 +12,37 @@ and open the template in the editor.
 #navbar ul{
                 display: none;
                 background-color: #f90;
-                position: absolute;
-                top: 100%;
+                position:static;
+                top: 50%;
             }
-            #navbar li:hover ul { display: block; }
+            #navbar li:focus ul { display: block; }
             #navbar, #navbar ul{
                 margin: 0;
                 padding: 0;
                 list-style-type: none;
             }
             #navbar {
-                height: 50px;
+                height: 60px;
                 background-color: #666;
-                padding-left: 40px;
+                padding-left: 100px;
                 min-width: 470px;
             }
             #navbar li {
                 float: left;
-                position: relative;
-                height: 100%;
+                position: inherit;
+                height:100%;
             }
             #navbar li a {
                 display: block;
-                padding: 6px;
-                width: 100px;
+                padding:18px;
+                width: 200px;
                 color: #fff;
-                text-decoration: none;
+                text-decoration: activeborder;
                 text-align: center;
             }
             #navbar ul li { float: none; }
-            #navbar li:hover { background-color: #f90; }
-            #navbar ul li:hover { background-color: #666; }
+            #navbar li:before { background-color: #f90; }
+            #navbar ul li:hover{ background-color: #333; }
 
             /* Full-width input fields */
             input[type=text], input[type=password] {
@@ -63,6 +63,7 @@ and open the template in the editor.
                 border: none;
                 cursor: pointer;
                 width: 60%;
+                
                 
                 
             }
@@ -166,4 +167,3 @@ and open the template in the editor.
 
        
        
-        
